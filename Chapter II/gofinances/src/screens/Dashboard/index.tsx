@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import {
     Container,
     Header,
@@ -8,8 +9,10 @@ import {
     Photo,
     User,
     UserGreeting,
-    UserName
+    UserName,
+    Icon
 } from './styles';
+
 
 export function Dashboard() {
     return (
@@ -26,6 +29,8 @@ export function Dashboard() {
                             <UserName>Raul</UserName>
                         </User>
                     </UserInfo>
+                    
+                    <Icon name="power" />
                 </UserWrapper>
 
             </Header>
