@@ -1,4 +1,5 @@
 import React from 'react';
+import { HighlightCart } from '../../components/HighlightCart';
 
 
 import {
@@ -34,6 +35,10 @@ export function Dashboard() {
                 </UserWrapper>
 
             </Header>
+
+            <HighlightCart />
+
         </Container>
+
     )
 }
