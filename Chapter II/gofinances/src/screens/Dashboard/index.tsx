@@ -1,6 +1,6 @@
 import React from 'react';
 import { HighlightCart } from '../../components/HighlightCart';
-
+import { TransactionCard } from '../../components/TransactionCard';
 
 import {
     Container,
@@ -12,7 +12,9 @@ import {
     UserGreeting,
     UserName,
     Icon,
-    HighlightCarts
+    HighlightCarts,
+    Transactions,
+    Title
 } from './styles';
 
 
@@ -58,6 +60,13 @@ export function Dashboard() {
                 /> 
                 
             </HighlightCarts>
+
+            <Transactions>
+                <Title>Listagem</Title>
+
+                <TransactionCard />
+            </Transactions>
+
         </Container>
 
     )
