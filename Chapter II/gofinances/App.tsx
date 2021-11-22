@@ -10,7 +10,8 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import theme from './src/global/styles/theme';
-import { Register } from './src/screens/Register';
+
+import { CategorySelect } from './src/screens/CategorySelect';
 
 
 export default function App() {
@@ -20,14 +21,14 @@ export default function App() {
     Poppins_700Bold
   });
 
-  if(!fontsLoader) {
+  if (!fontsLoader) {
     return <AppLoading />
   }
 
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Register />
+        <CategorySelect />
       </ThemeProvider>
     </>
   );
